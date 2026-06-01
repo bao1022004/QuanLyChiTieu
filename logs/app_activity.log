@@ -1,0 +1,16 @@
+2026-06-01 23:15:52,523 WARNING Đăng nhập thất bại cho username: 'abc'
+2026-06-01 23:16:00,378 WARNING Đăng nhập thất bại cho username: 'abc'
+2026-06-01 23:16:22,338 WARNING Đăng nhập thất bại cho username: 'bao'
+2026-06-01 23:16:26,289 INFO Người dùng 'bao' đăng nhập thành công.
+2026-06-01 23:16:26,296 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-01 23:16:35,769 WARNING Đang giả lập lỗi 500 (Giao dịch lỗi)...
+2026-06-01 23:17:28,637 INFO Người dùng 'bao' truy cập trang Profile.
+2026-06-01 23:17:33,104 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-01 23:17:34,273 INFO Người dùng 'bao' truy cập trang Profile.
+2026-06-01 23:17:43,635 INFO Người dùng 'bao' truy cập trang Profile.
+2026-06-01 23:17:43,642 INFO Người dùng 'bao' đã thay đổi cấu hình tài khoản (Limit: 2000000.0).
+2026-06-01 23:17:47,570 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-01 23:18:28,343 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-01 23:18:36,885 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-01 23:19:05,045 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-01 23:19:11,965 WARNING Đang giả lập lỗi 500 (Giao dịch lỗi)...
