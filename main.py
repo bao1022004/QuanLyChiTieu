@@ -1,13 +1,14 @@
 import os
+import time
 import traceback
 from datetime import datetime
-from flask import Flask, render_template, redirect, url_for, request, flash, jsonify, abort
+from flask import Flask, render_template, redirect, url_for, request, flash, jsonify, abort, g
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from werkzeug.security import generate_password_hash
 
 from config import Config
 from models import db, User, Category, Transaction
-from logger import app_logger, db_logger, error_logger
+from logger import app_logger, db_logger, error_logger, access_logger
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -22,6 +23,58 @@ login_manager.login_message_category = "warning"
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
+
+# ==================== MIDDLEWARE LOG TRUY CẬP CHUYÊN NGHIỆP ====================
+@app.before_request
+def start_timer():
+    g.start_time = time.time()
+
+@app.after_request
+def log_request(response):
+    # Tính thời gian phản hồi (ms)
+    now = time.time()
+    duration = round((now - g.start_time) * 1000) if hasattr(g, 'start_time') else 0
+    
+    # Định dạng timestamp chuẩn Nginx/Apache: [02/Jun/2026:11:41:38 +0700]
+    # Lấy thông tin thời gian hiện tại giờ Việt Nam (+0700)
+    timestamp = datetime.now().strftime('%d/%b/%Y:%H:%M:%S +0700')
+    
+    # Lấy IP Client
+    ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+    if ip and ',' in ip:
+        ip = ip.split(',')[0].strip()
+        
+    # Lấy Tên đăng nhập (hoặc Guest)
+    username = '-'
+    try:
+        if current_user and current_user.is_authenticated:
+            username = current_user.username
+        else:
+            username = 'Guest'
+    except Exception:
+        username = 'Guest'
+        
+    # Lấy Method, Path, Protocol
+    method = request.method
+    path = request.full_path if request.query_string else request.path
+    if path.endswith('?'):
+        path = path[:-1]
+    protocol = request.environ.get('SERVER_PROTOCOL', 'HTTP/1.1')
+    
+    # Lấy Status Code và Response Size
+    status = response.status_code
+    size = response.headers.get('Content-Length', response.content_length or 0)
+    
+    # Lấy Referer và User-Agent
+    referer = request.headers.get('Referer', '-')
+    user_agent = request.headers.get('User-Agent', '-')
+    
+    # Tạo dòng log
+    # Định dạng: [IP] - [Username] [[Timestamp]] "[Method] [Path] [Protocol]" [Status] [ResponseSize] "[Referer]" "[User-Agent]" - [ResponseTime]ms
+    log_line = f'{ip} - {username} [{timestamp}] "{method} {path} {protocol}" {status} {size} "{referer}" "{user_agent}" - {duration}ms'
+    
+    access_logger.info(log_line)
+    return response
 
 # ==================== LỖI HỆ THỐNG ====================
 @app.errorhandler(500)

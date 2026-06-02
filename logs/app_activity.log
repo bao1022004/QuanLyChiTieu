@@ -14,3 +14,17 @@
 2026-06-01 23:18:36,885 INFO Người dùng 'bao' truy cập Dashboard.
 2026-06-01 23:19:05,045 INFO Người dùng 'bao' truy cập Dashboard.
 2026-06-01 23:19:11,965 WARNING Đang giả lập lỗi 500 (Giao dịch lỗi)...
+2026-06-02 11:01:32,161 WARNING Đăng nhập thất bại cho username: 'bao'
+2026-06-02 11:02:18,874 INFO Người dùng 'bao' đăng nhập thành công.
+2026-06-02 11:02:18,882 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-02 11:03:16,926 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-02 11:03:46,521 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-02 11:04:03,124 INFO Người dùng 'bao' đã đăng xuất.
+2026-06-02 11:04:28,547 WARNING Đăng nhập thất bại cho username: '123'
+2026-06-02 11:36:32,677 WARNING Đăng nhập thất bại cho username: 'bao'
+2026-06-02 11:36:37,856 WARNING Đăng nhập thất bại cho username: 'bao'
+2026-06-02 11:36:41,589 WARNING Đăng nhập thất bại cho username: 'bao'
+2026-06-02 11:37:35,475 INFO Người dùng 'bao' đăng nhập thành công.
+2026-06-02 11:37:35,482 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-02 11:52:04,107 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-02 11:52:56,390 INFO Người dùng 'bao' truy cập Dashboard.

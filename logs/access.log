@@ -1,0 +1,6 @@
+127.0.0.1 - Guest [02/Jun/2026:11:45:26 +0700] "GET /login HTTP/1.1" 200 3767 "-" "Werkzeug/3.1.8" - 8ms
+127.0.0.1 - bao [02/Jun/2026:11:52:04 +0700] "GET / HTTP/1.1" 200 9395 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0" - 62ms
+127.0.0.1 - bao [02/Jun/2026:11:52:04 +0700] "GET /api/chart-data?month=2026-06 HTTP/1.1" 200 33 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0" - 3ms
+127.0.0.1 - bao [02/Jun/2026:11:52:56 +0700] "POST /transaction/add HTTP/1.1" 302 207 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0" - 11ms
+127.0.0.1 - bao [02/Jun/2026:11:52:56 +0700] "GET /dashboard HTTP/1.1" 200 10269 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0" - 4ms
+127.0.0.1 - bao [02/Jun/2026:11:52:56 +0700] "GET /api/chart-data?month=2026-06 HTTP/1.1" 200 71 "http://127.0.0.1:5000/dashboard" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0" - 10ms

@@ -3,9 +3,10 @@ import os
 from logging.handlers import RotatingFileHandler
 from config import Config
 
-def setup_logger(name, log_file, level=logging.INFO):
+def setup_logger(name, log_file, level=logging.INFO, formatter=None):
     """Function setup logger chung cho hệ thống"""
-    formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+    if formatter is None:
+        formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
     
     # Khởi tạo FileHandler
     file_path = os.path.join(Config.LOG_DIR, log_file)
@@ -28,3 +29,7 @@ db_logger = setup_logger('expense_db', 'expense_db.log')
 
 # 3. Log ngoại lệ & Hệ thống
 error_logger = setup_logger('system_errors', 'system_errors.log', level=logging.ERROR)
+
+# 4. Log truy cập (Access logs của web server chuyên nghiệp)
+access_logger = setup_logger('web_access', 'access.log', formatter=logging.Formatter('%(message)s'))
+

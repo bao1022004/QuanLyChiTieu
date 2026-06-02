@@ -9,3 +9,14 @@
 2026-06-01 23:18:36,885 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1
 2026-06-01 23:19:05,039 INFO User 1 đã thêm khoản chi: 1515151515115.0 vào ngày 2026-06-01 (Category ID: 1)
 2026-06-01 23:19:05,045 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1
+2026-06-02 11:02:18,905 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1
+2026-06-02 11:03:16,921 INFO User 1 đã xóa giao dịch ID 1 (Số tiền: 1515151515115.0)
+2026-06-02 11:03:16,926 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1
+2026-06-02 11:03:46,516 INFO User 1 đã thêm khoản chi: 30000.0 vào ngày 2026-06-02 (Category ID: 2)
+2026-06-02 11:03:46,522 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1
+2026-06-02 11:37:15,825 INFO Đã tạo user mới: bao (ID: 1)
+2026-06-02 11:37:15,830 INFO Đã tạo các danh mục mặc định cho user ID: 1
+2026-06-02 11:37:35,488 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1
+2026-06-02 11:52:04,113 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1
+2026-06-02 11:52:56,384 INFO User 1 đã thêm khoản chi: 499999.99 vào ngày 2026-06-11 (Category ID: 3)
+2026-06-02 11:52:56,390 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1

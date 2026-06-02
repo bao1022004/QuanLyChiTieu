@@ -5,7 +5,7 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'a-very-secret-key-for-expense-manager'
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-        'sqlite:///' + os.path.join(BASE_DIR, 'expense_db.sqlite')
+        'mysql+pymysql://root:@localhost/quanlychitieu?charset=utf8mb4'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     # Thư mục chứa log
