@@ -28,3 +28,34 @@
 2026-06-02 11:37:35,482 INFO Người dùng 'bao' truy cập Dashboard.
 2026-06-02 11:52:04,107 INFO Người dùng 'bao' truy cập Dashboard.
 2026-06-02 11:52:56,390 INFO Người dùng 'bao' truy cập Dashboard.
+2026-06-02 12:42:03 WARNING Đăng nhập thất bại cho username: 'bao'
+2026-06-02 12:48:40 INFO Đã tạo user mới: bao (ID: 1)
+2026-06-02 12:48:40 INFO Đã tạo các danh mục mặc định cho user ID: 1
+2026-06-02 12:49:10 INFO Người dùng 'bao' đăng nhập thành công.
+2026-06-02 12:49:10 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:49:19 INFO Người dùng 'bao' truy cập trang Profile.
+2026-06-02 12:49:23 INFO Người dùng 'bao' đã thay đổi cấu hình tài khoản (Limit: 3000000).
+2026-06-02 12:49:23 INFO Người dùng 'bao' truy cập trang Profile.
+2026-06-02 12:49:26 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:50:37 INFO User 1 đã thêm khoản chi: 20000 vào ngày 2026-06-02 (Category ID: 1)
+2026-06-02 12:50:37 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:50:55 INFO User 1 đã thêm khoản chi: 300000 vào ngày 2026-06-02 (Category ID: 3)
+2026-06-02 12:50:55 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:51:02 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:51:03 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:51:46 INFO User 1 đã thêm khoản chi: -0.01 vào ngày 2026-06-02 (Category ID: 1)
+2026-06-02 12:51:46 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:51:58 INFO User 1 đã thêm khoản chi: -90000 vào ngày 2026-06-02 (Category ID: 1)
+2026-06-02 12:51:58 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:52:06 INFO User 1 đã xóa giao dịch ID 4 (Số tiền: -90000)
+2026-06-02 12:52:06 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:52:10 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:52:13 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-01).
+2026-06-02 12:52:16 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:52:21 INFO Người dùng 'bao' truy cập trang Profile.
+2026-06-02 12:52:26 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:52:33 INFO User 1 đã thêm khoản chi: 3000000 vào ngày 2026-06-02 (Category ID: 1)
+2026-06-02 12:52:33 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:52:37 INFO Người dùng 'bao' truy cập trang Profile.
+2026-06-02 12:52:38 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-02 12:52:49 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
