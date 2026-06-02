@@ -20,3 +20,6 @@
 2026-06-02 11:52:04,113 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1
 2026-06-02 11:52:56,384 INFO User 1 đã thêm khoản chi: 499999.99 vào ngày 2026-06-11 (Category ID: 3)
 2026-06-02 11:52:56,390 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1
+2026-06-02 19:08:32 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1
+2026-06-02 19:08:58 INFO User 1 đã thêm khoản chi: 149000 vào ngày 2026-06-02 (Category ID: 2)
+2026-06-02 19:08:58 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1

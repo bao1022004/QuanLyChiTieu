@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $pdo->prepare("INSERT INTO user (username, password_hash, name) VALUES (?, ?, ?)");
             if ($stmt->execute([$username, $password_hash, $name])) {
                 $user_id = $pdo->lastInsertId();
-                log_app_activity('INFO', "Đã tạo user mới: {$username} (ID: {$user_id})");
+                log_db_activity('INFO', "Đã tạo user mới: {$username} (ID: {$user_id})");
 
                 // Thêm danh mục mặc định
                 $default_categories = ['Ăn uống', 'Di chuyển', 'Mua sắm', 'Hóa đơn', 'Giải trí'];
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 foreach ($default_categories as $cat) {
                     $stmt_cat->execute([$cat, $user_id]);
                 }
-                log_app_activity('INFO', "Đã tạo các danh mục mặc định cho user ID: {$user_id}");
+                log_db_activity('INFO', "Đã tạo các danh mục mặc định cho user ID: {$user_id}");
 
                 $_SESSION['flash_messages'][] = ['type' => 'success', 'message' => 'Đăng ký thành công! Vui lòng đăng nhập.'];
                 header('Location: login.php');
