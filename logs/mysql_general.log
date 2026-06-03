@@ -1,0 +1,205 @@
+c:\xampp\mysql\bin\mysqld.exe, Version: 10.4.32-MariaDB-log (mariadb.org binary distribution). started with:
+TCP Port: 3306, Named Pipe: C:/xampp/mysql/mysql.sock
+Time		    Id Command	Argument
+260603 17:37:10	     8 Connect	root@localhost as anonymous on quanlychitieu
+		     8 Quit	
+260603 17:37:15	     9 Connect	root@localhost as anonymous on quanlychitieu
+		     9 Prepare	SELECT id, username, password_hash FROM user WHERE username = ?
+		     9 Execute	SELECT id, username, password_hash FROM user WHERE username = 'bao'
+		     9 Close stmt	
+		     9 Quit	
+		    10 Connect	root@localhost as anonymous on quanlychitieu
+		    10 Prepare	SELECT * FROM user WHERE id = ?
+		    10 Execute	SELECT * FROM user WHERE id = '1'
+		    10 Prepare	SELECT t.*, c.name as category_name 
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = ? AND YEAR(t.date) = ? AND MONTH(t.date) = ?
+    ORDER BY t.date DESC
+		    10 Close stmt	
+		    10 Execute	SELECT t.*, c.name as category_name 
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = '1' AND YEAR(t.date) = '2026' AND MONTH(t.date) = '06'
+    ORDER BY t.date DESC
+		    10 Prepare	SELECT * FROM category WHERE user_id = ?
+		    10 Close stmt	
+		    10 Execute	SELECT * FROM category WHERE user_id = '1'
+		    10 Close stmt	
+		    10 Quit	
+		    11 Connect	root@localhost as anonymous on quanlychitieu
+		    11 Prepare	SELECT c.name as category_name, SUM(t.amount) as total_amount
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = ? AND YEAR(t.date) = ? AND MONTH(t.date) = ?
+    GROUP BY c.id, c.name
+		    11 Execute	SELECT c.name as category_name, SUM(t.amount) as total_amount
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = '1' AND YEAR(t.date) = '2026' AND MONTH(t.date) = '06'
+    GROUP BY c.id, c.name
+		    11 Close stmt	
+		    11 Quit	
+260603 17:37:52	    12 Connect	root@localhost as anonymous on quanlychitieu
+		    12 Prepare	INSERT INTO transaction (amount, date, note, user_id, category_id) VALUES (?, ?, ?, ?, ?)
+		    12 Execute	INSERT INTO transaction (amount, date, note, user_id, category_id) VALUES ('500000', '2026-06-03', 'xe hoi', '1', '2')
+		    12 Close stmt	
+		    12 Quit	
+		    13 Connect	root@localhost as anonymous on quanlychitieu
+		    13 Prepare	SELECT * FROM user WHERE id = ?
+		    13 Execute	SELECT * FROM user WHERE id = '1'
+		    13 Prepare	SELECT t.*, c.name as category_name 
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = ? AND YEAR(t.date) = ? AND MONTH(t.date) = ?
+    ORDER BY t.date DESC
+		    13 Close stmt	
+		    13 Execute	SELECT t.*, c.name as category_name 
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = '1' AND YEAR(t.date) = '2026' AND MONTH(t.date) = '06'
+    ORDER BY t.date DESC
+		    13 Prepare	SELECT * FROM category WHERE user_id = ?
+		    13 Close stmt	
+		    13 Execute	SELECT * FROM category WHERE user_id = '1'
+		    13 Close stmt	
+		    13 Quit	
+		    14 Connect	root@localhost as anonymous on quanlychitieu
+		    14 Prepare	SELECT c.name as category_name, SUM(t.amount) as total_amount
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = ? AND YEAR(t.date) = ? AND MONTH(t.date) = ?
+    GROUP BY c.id, c.name
+		    14 Execute	SELECT c.name as category_name, SUM(t.amount) as total_amount
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = '1' AND YEAR(t.date) = '2026' AND MONTH(t.date) = '06'
+    GROUP BY c.id, c.name
+		    14 Close stmt	
+		    14 Quit	
+c:\xampp\mysql\bin\mysqld.exe, Version: 10.4.32-MariaDB-log (mariadb.org binary distribution). started with:
+TCP Port: 3306, Named Pipe: C:/xampp/mysql/mysql.sock
+Time		    Id Command	Argument
+260603 17:46:25	     8 Connect	root@localhost as anonymous on quanlychitieu
+		     8 Quit	
+260603 17:46:29	     9 Connect	root@localhost as anonymous on quanlychitieu
+		     9 Prepare	SELECT id, username, password_hash FROM user WHERE username = ?
+		     9 Execute	SELECT id, username, password_hash FROM user WHERE username = 'a'
+		     9 Close stmt	
+		     9 Quit	
+260603 17:46:33	    10 Connect	root@localhost as anonymous on quanlychitieu
+		    10 Prepare	SELECT id, username, password_hash FROM user WHERE username = ?
+		    10 Execute	SELECT id, username, password_hash FROM user WHERE username = 'a'
+		    10 Close stmt	
+		    10 Quit	
+260603 17:46:41	    11 Connect	root@localhost as anonymous on quanlychitieu
+		    11 Prepare	SELECT id, username, password_hash FROM user WHERE username = ?
+		    11 Execute	SELECT id, username, password_hash FROM user WHERE username = 'bao'
+		    11 Close stmt	
+		    11 Quit	
+		    12 Connect	root@localhost as anonymous on quanlychitieu
+		    12 Prepare	SELECT * FROM user WHERE id = ?
+		    12 Execute	SELECT * FROM user WHERE id = '1'
+		    12 Prepare	SELECT t.*, c.name as category_name 
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = ? AND YEAR(t.date) = ? AND MONTH(t.date) = ?
+    ORDER BY t.date DESC
+		    12 Close stmt	
+		    12 Execute	SELECT t.*, c.name as category_name 
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = '1' AND YEAR(t.date) = '2026' AND MONTH(t.date) = '06'
+    ORDER BY t.date DESC
+		    12 Prepare	SELECT * FROM category WHERE user_id = ?
+		    12 Close stmt	
+		    12 Execute	SELECT * FROM category WHERE user_id = '1'
+		    12 Close stmt	
+		    12 Quit	
+		    13 Connect	root@localhost as anonymous on quanlychitieu
+		    13 Prepare	SELECT c.name as category_name, SUM(t.amount) as total_amount
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = ? AND YEAR(t.date) = ? AND MONTH(t.date) = ?
+    GROUP BY c.id, c.name
+		    13 Execute	SELECT c.name as category_name, SUM(t.amount) as total_amount
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = '1' AND YEAR(t.date) = '2026' AND MONTH(t.date) = '06'
+    GROUP BY c.id, c.name
+		    13 Close stmt	
+		    13 Quit	
+260603 17:49:23	    14 Connect	root@localhost as anonymous on quanlychitieu
+		    14 Prepare	INSERT INTO transaction (amount, date, note, user_id, category_id) VALUES (?, ?, ?, ?, ?)
+		    14 Execute	INSERT INTO transaction (amount, date, note, user_id, category_id) VALUES ('36000', '2026-06-03', 'gà', '1', '3')
+		    14 Close stmt	
+		    14 Quit	
+		    15 Connect	root@localhost as anonymous on quanlychitieu
+		    15 Prepare	SELECT * FROM user WHERE id = ?
+		    15 Execute	SELECT * FROM user WHERE id = '1'
+		    15 Prepare	SELECT t.*, c.name as category_name 
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = ? AND YEAR(t.date) = ? AND MONTH(t.date) = ?
+    ORDER BY t.date DESC
+		    15 Close stmt	
+		    15 Execute	SELECT t.*, c.name as category_name 
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = '1' AND YEAR(t.date) = '2026' AND MONTH(t.date) = '06'
+    ORDER BY t.date DESC
+		    15 Prepare	SELECT * FROM category WHERE user_id = ?
+		    15 Close stmt	
+		    15 Execute	SELECT * FROM category WHERE user_id = '1'
+		    15 Close stmt	
+		    15 Quit	
+		    16 Connect	root@localhost as anonymous on quanlychitieu
+		    16 Prepare	SELECT c.name as category_name, SUM(t.amount) as total_amount
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = ? AND YEAR(t.date) = ? AND MONTH(t.date) = ?
+    GROUP BY c.id, c.name
+		    16 Execute	SELECT c.name as category_name, SUM(t.amount) as total_amount
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = '1' AND YEAR(t.date) = '2026' AND MONTH(t.date) = '06'
+    GROUP BY c.id, c.name
+		    16 Close stmt	
+		    16 Quit	
+260603 17:49:57	    17 Connect	root@localhost as anonymous on quanlychitieu
+		    17 Prepare	INSERT INTO transaction (amount, date, note, user_id, category_id) VALUES (?, ?, ?, ?, ?)
+		    17 Execute	INSERT INTO transaction (amount, date, note, user_id, category_id) VALUES ('85000', '2026-06-03', 'nước', '1', '4')
+		    17 Close stmt	
+		    17 Quit	
+		    18 Connect	root@localhost as anonymous on quanlychitieu
+		    18 Prepare	SELECT * FROM user WHERE id = ?
+		    18 Execute	SELECT * FROM user WHERE id = '1'
+		    18 Prepare	SELECT t.*, c.name as category_name 
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = ? AND YEAR(t.date) = ? AND MONTH(t.date) = ?
+    ORDER BY t.date DESC
+		    18 Close stmt	
+		    18 Execute	SELECT t.*, c.name as category_name 
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = '1' AND YEAR(t.date) = '2026' AND MONTH(t.date) = '06'
+    ORDER BY t.date DESC
+		    18 Prepare	SELECT * FROM category WHERE user_id = ?
+		    18 Close stmt	
+		    18 Execute	SELECT * FROM category WHERE user_id = '1'
+		    18 Close stmt	
+		    18 Quit	
+		    19 Connect	root@localhost as anonymous on quanlychitieu
+		    19 Prepare	SELECT c.name as category_name, SUM(t.amount) as total_amount
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = ? AND YEAR(t.date) = ? AND MONTH(t.date) = ?
+    GROUP BY c.id, c.name
+		    19 Execute	SELECT c.name as category_name, SUM(t.amount) as total_amount
+    FROM transaction t 
+    JOIN category c ON t.category_id = c.id 
+    WHERE t.user_id = '1' AND YEAR(t.date) = '2026' AND MONTH(t.date) = '06'
+    GROUP BY c.id, c.name
+		    19 Close stmt	
+		    19 Quit	
