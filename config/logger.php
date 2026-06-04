@@ -19,11 +19,7 @@ function log_app_activity($level, $message) {
     write_log('app_activity.log', $log_line);
 }
 
-function log_db_activity($level, $message) {
-    $timestamp = date('Y-m-d H:i:s');
-    $log_line = "{$timestamp} {$level} {$message}";
-    write_log('expense_db.log', $log_line);
-}
+
 
 function log_access($start_time) {
     $ip = $_SERVER['REMOTE_ADDR'] ?? '-';

@@ -34,7 +34,7 @@ $stmt = $pdo->prepare("
 $stmt->execute([$user_id, $year, $month_num]);
 $transactions = $stmt->fetchAll();
 
-log_db_activity('INFO', "Thực hiện truy vấn lọc giao dịch tháng {$month} cho user_id {$user_id}");
+log_app_activity('INFO', "Thực hiện truy vấn lọc giao dịch tháng {$month} cho user_id {$user_id}");
 
 // Tính tổng chi tiêu
 $total_expense = array_sum(array_column($transactions, 'amount'));

@@ -127,3 +127,31 @@
 2026-06-03 12:46:41 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
 2026-06-03 12:49:23 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
 2026-06-03 12:49:57 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-04 04:21:21 INFO Người dùng 'bao' đăng nhập thành công.
+2026-06-04 04:21:21 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-04 04:21:34 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-04 04:24:08 INFO Người dùng 'bao' truy cập trang Profile.
+2026-06-04 04:24:13 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-04 04:24:30 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-04 04:24:35 INFO Người dùng 'bao' truy cập trang Profile.
+2026-06-04 04:24:42 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-04 04:24:52 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-04 04:41:29 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 1
+2026-06-04 04:41:29 INFO Người dùng 'bao' truy cập Dashboard (Tháng 2026-06).
+2026-06-04 04:41:31 INFO Người dùng 'bao' đã đăng xuất.
+2026-06-04 04:41:34 WARNING Đăng nhập thất bại cho username: '1'
+2026-06-04 04:41:37 WARNING Đăng nhập thất bại cho username: 'a'
+2026-06-04 04:41:43 WARNING Đăng nhập thất bại cho username: '1'
+2026-06-04 04:42:10 INFO Đã tạo user mới: a (ID: 2)
+2026-06-04 04:42:10 INFO Đã tạo các danh mục mặc định cho user ID: 2
+2026-06-04 04:42:14 INFO Người dùng 'a' đăng nhập thành công.
+2026-06-04 04:42:14 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 2
+2026-06-04 04:42:14 INFO Người dùng 'a' truy cập Dashboard (Tháng 2026-06).
+2026-06-04 04:42:16 INFO Người dùng 'a' truy cập trang Profile.
+2026-06-04 04:42:24 INFO Người dùng 'a' đã thay đổi cấu hình tài khoản (Limit: 8000000000).
+2026-06-04 04:42:24 INFO Người dùng 'a' truy cập trang Profile.
+2026-06-04 04:42:25 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 2
+2026-06-04 04:42:25 INFO Người dùng 'a' truy cập Dashboard (Tháng 2026-06).
+2026-06-04 04:42:34 INFO User 2 đã thêm khoản chi: 500000000 vào ngày 2026-06-04 (Category ID: 6)
+2026-06-04 04:42:34 INFO Thực hiện truy vấn lọc giao dịch tháng 2026-06 cho user_id 2
+2026-06-04 04:42:34 INFO Người dùng 'a' truy cập Dashboard (Tháng 2026-06).

@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $pdo->prepare("INSERT INTO transaction (amount, date, note, user_id, category_id) VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([$amount, $date, $note, $user_id, $category_id]);
             
-            log_db_activity('INFO', "User {$user_id} đã thêm khoản chi: {$amount} vào ngày {$date} (Category ID: {$category_id})");
+            log_app_activity('INFO', "User {$user_id} đã thêm khoản chi: {$amount} vào ngày {$date} (Category ID: {$category_id})");
             $_SESSION['flash_messages'][] = ['type' => 'success', 'message' => 'Đã thêm khoản chi thành công!'];
         } catch (PDOException $e) {
             $_SESSION['flash_messages'][] = ['type' => 'error', 'message' => 'Đã xảy ra lỗi hệ thống.'];

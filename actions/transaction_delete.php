@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($txn) {
             $stmt = $pdo->prepare("DELETE FROM transaction WHERE id = ?");
             if ($stmt->execute([$txn_id])) {
-                log_db_activity('INFO', "User {$user_id} đã xóa giao dịch ID {$txn_id} (Số tiền: {$txn['amount']})");
+                log_app_activity('INFO', "User {$user_id} đã xóa giao dịch ID {$txn_id} (Số tiền: {$txn['amount']})");
                 $_SESSION['flash_messages'][] = ['type' => 'success', 'message' => 'Đã xóa khoản chi thành công!'];
             } else {
                 $_SESSION['flash_messages'][] = ['type' => 'error', 'message' => 'Lỗi khi xóa giao dịch.'];
